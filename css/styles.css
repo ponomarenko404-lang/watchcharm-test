@@ -26,6 +26,12 @@
   font-style: normal;
 }
 
+body {
+  background-color: #fbfbfb;
+  font-family: 'Gilroy' sans-serif;
+  color: rgba(12, 12, 12, 0.7);
+}
+
 ul,
 ol {
   margin: 0;
@@ -58,20 +64,30 @@ button {
   cursor: pointer;
 }
 .container {
-    max-width: 1180px;
-    padding: 0 15px;
-    margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
 .reviews-container {
-    display: flex;
+  display: flex;
+}
+
+.header {
+}
+.container {
+}
+.header-logo {
+}
+.header-nav {
+}
+.header-nav-list {
+}
+.header-nav-item {
+}
+.header-nav-link {
+}
+.header-social-list {
+}
+.header-social-item {
+}
