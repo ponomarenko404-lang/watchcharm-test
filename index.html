@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>watchcharm</title>
+    <title>WatchCharm</title>
     <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- HEADER  -->
     <header class="header">
-      <div class="container">
-        <a class="header-logo" href="/index.html">watchcharm</a>
+      <div class="container header-container">
+        <a class="header-logo" href="./index.html">watchcharm</a>
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-item">
@@ -34,39 +39,39 @@
               <a class="header-nav-link" href="">Contact Us</a>
             </li>
           </ul>
-          <ul class="header-social-list">
-            <li class="header-social-item">
-              <a class="header-nav-link" href="" target="_blank">
-                <img
-                  src="./images/facebook.svg"
-                  alt="facebook"
-                  width="36"
-                  height="36"
-                />
-              </a>
-            </li>
-            <li class="header-social-item">
-              <a class="header-nav-link" href="" target="_blank">
-                <img
-                  src="./images/instagram.svg"
-                  alt="instagram"
-                  width="36"
-                  height="36"
-                />
-              </a>
-            </li>
-            <li class="header-social-item">
-              <a class="header-nav-link" href="" target="_blank">
-                <img
-                  src="./images/youtube.svg"
-                  alt="youtube"
-                  width="36"
-                  height="36"
-                />
-              </a>
-            </li>
-          </ul>
         </nav>
+        <ul class="header-social-list">
+          <li class="header-social-item">
+            <a class="header-nav-link" href="" target="_blank">
+              <img
+                src="./images/facebook.svg"
+                alt="facebook"
+                width="36"
+                height="36"
+              />
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a class="header-nav-link" href="" target="_blank">
+              <img
+                src="./images/instagram.svg"
+                alt="instagram"
+                width="36"
+                height="36"
+              />
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a class="header-nav-link" href="" target="_blank">
+              <img
+                src="./images/youtube.svg"
+                alt="youtube"
+                width="36"
+                height="36"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -178,132 +183,142 @@
       </section>
 
       <section>
-        <h2>story</h2>
-
-        <p>
-          Choose your story, making every moment unique. Time is your style, and
-          we reveal it.
-        </p>
-        <a href="">Contact Us</a>
-      </section>
-
-      <section>
-        <h2>Sale</h2>
-      </section>
-      <ul>
-        <li>
-          <img
-            src="/images/watchsale5.png"
-            alt="watchsale5"
-            width="96"
-            height="100"
-          />
-        </li>
-        <li>
-          <img
-            src="./images/watchsale3.png"
-            alt="watchsale3"
-            width="96"
-            height="100"
-          />
-        </li>
-        <li>
-          <img
-            src="./images/watchsale2.png"
-            alt="watchsale2"
-            width="96"
-            height="100"
-          />
-        </li>
-        <li>
-          <img
-            src="./images/watchsale4.png"
-            alt="watchsale4"
-            width="96"
-            height="100"
-          />
-        </li>
-        <img
-          src="./images/watchsale1.png"
-          alt="watchsale1"
-          width="328"
-          height="398"
-        />
-      </ul>
-      <h3>MARQ&reg; Commander (Gen 2) - Carbon Edition</h3>
-      <p>Product tag: 706587</p>
-      <p>€1500</p>
-      <span>€3000</span>
-      <p>
-        The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch
-        for adventurers that takes materials and features to the next level. The
-        body of the watch is made of very durable Fused Carbon Fiber material
-        and has a precise AMOLED touch screen. The sensitive touch screen is
-        complemented by buttons that can be used in any conditions.
-      </p>
-      <ul>
-        <li>Fused carbon fiber</li>
-        <li>Grade-5 Titanuim</li>
-        <li>Athlete</li>
-        <li>Golfer</li>
-        <li>Commander</li>
-        <li>Adventurer</li>
-      </ul>
-
-      <section class="container">
-        <h2>Reviews</h2>
-        <div class="reviews-container">
-          <img src="./images/teamelips1.png" alt="man" />
-          <h3>John Wax</h3>
-          <p>
-            Buying a watch from was the best choice for me. The design is
-            perfectly combined with high quality materials. The strap fits
-            nicely on the hand, and the mechanism works flawlessly.
-          </p>
-          <img src="./images/teamelips2.png" alt="girl1" />
-          <h3>Victoria Romashenko</h3>
-          <p>
-            Can't take my eyes off my watch from. Every time I put it on, it is
-            admired by those around me. The build quality and attention to
-            detail make it a real gem among my accessories.
-          </p>
-          <img src="./images/teamelips3.png" alt="girl2" />
-          <h3>Anastasia Trachuk</h3>
-          <p>
-            My watch from is a real masterpiece. Every detail impresses with the
-            high quality of execution. Special features like [specify features]
-            make it an indispensable companion in my daily life.
-          </p>
+        <div class="container">
+          <h2 hidden>Advertisement</h2>
+          <div class="story-wrapper">
+            <p class="story-text">
+              Choose
+              <span class="story-text-part">your story</span>
+              , making every moment unique. Time is your style, and we reveal
+              it.
+            </p>
+            <a class="story-link" href="#contact-us">Contact Us</a>
+          </div>
         </div>
       </section>
 
       <section>
-        <h2>Contact Us</h2>
+        <h2>Sale</h2>
+        <ul>
+          <li>
+            <img
+              src="/images/watchsale5.png"
+              alt="watchsale5"
+              width="96"
+              height="100"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/watchsale3.png"
+              alt="watchsale3"
+              width="96"
+              height="100"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/watchsale2.png"
+              alt="watchsale2"
+              width="96"
+              height="100"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/watchsale4.png"
+              alt="watchsale4"
+              width="96"
+              height="100"
+            />
+          </li>
+          <img
+            src="./images/watchsale1.png"
+            alt="watchsale1"
+            width="328"
+            height="398"
+          />
+        </ul>
+        <h3>MARQ&reg; Commander (Gen 2) - Carbon Edition</h3>
+        <p>Product tag: 706587</p>
+        <p>€1500</p>
+        <span>€3000</span>
         <p>
-          Please use the form below to contact us. Enter your name, email,
-          phone, and message and we'll get back to you shortly.
+          The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch
+          for adventurers that takes materials and features to the next level.
+          The body of the watch is made of very durable Fused Carbon Fiber
+          material and has a precise AMOLED touch screen. The sensitive touch
+          screen is complemented by buttons that can be used in any conditions.
         </p>
-        <form action="">
-          <ul>
-            <li>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
-            </li>
-            <li>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
-            </li>
-            <li>
-              <label for="namber">+380</label>
-              <input type="tel" id="namber" name="namber" />
-            </li>
-            <li>
-              <label for="comment">Comment</label>
-              <textarea name="comment" id="comment" name="comment"></textarea>
-            </li>
-          </ul>
-          <button type="submit">Send</button>
-        </form>
+        <ul>
+          <li>Fused carbon fiber</li>
+          <li>Grade-5 Titanuim</li>
+          <li>Athlete</li>
+          <li>Golfer</li>
+          <li>Commander</li>
+          <li>Adventurer</li>
+        </ul>
+      </section>
+
+      <!-- #region contact us-->
+      <section id="contact-us" class="contact-us">
+        <div class="container">
+          <h2 class="contact-us-htwo">Contact Us</h2>
+          <div class="contact-us-main-wrapper">
+            <div class="contact-us-wrapper">
+              <p class="modal-parag">
+                Please use the form below to contact us. Enter your name, email,
+                phone, and message and we'll get back to you shortly.
+              </p>
+              <form class="modal-form" name="modal-form">
+                <label class="modal-form-label" for="user-name">
+                  <input
+                    class="modal-form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Name"
+                  />
+                </label>
+                <label class="modal-form-label" for="e-mail">
+                  <input
+                    class="modal-form-input"
+                    type="email"
+                    name="e-mail"
+                    id="e-mail"
+                    placeholder="Email"
+                  />
+                </label>
+                <label class="modal-form-label" for="phone">
+                  <input
+                    class="modal-form-input"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="+380"
+                  />
+                </label>
+
+                <label class="modal-form-comment" for="user-comment">
+                  <textarea
+                    class="modal-form-textarea"
+                    name="user-comment"
+                    id="user-comment"
+                    placeholder="Comment"
+                  ></textarea>
+                </label>
+
+                <button class="contact-send" type="submit">Send</button>
+              </form>
+            </div>
+            <img
+              src="./images/contact-us/Watch-img.jpg"
+              alt="Image of Watch"
+              width="530"
+              height="556"
+            />
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>

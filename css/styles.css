@@ -28,14 +28,14 @@
 
 body {
   background-color: #fbfbfb;
-  font-family: 'Gilroy' sans-serif;
   color: rgba(12, 12, 12, 0.7);
+  font-family: 'Gilroy', sans-serif;
 }
 
 ul,
 ol {
   margin: 0;
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
 }
 
@@ -48,10 +48,12 @@ h6,
 p {
   margin: 0;
 }
+
 a {
   text-decoration: none;
   color: currentColor;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -63,31 +65,213 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
+/* .container {
+  max-width: 1280px;
+  padding: 0 65px;
+  margin: 0 auto;
+} */
+
 .container {
   max-width: 1180px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.reviews-container {
-  display: flex;
-}
+/* HEADER  */
 
 .header {
+  border-bottom: 1px solid rgba(12, 12, 12, 0.1);
 }
-.container {
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* .header .container {
+  display: flex;
+} */
+
 .header-logo {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
 }
 .header-nav {
 }
 .header-nav-list {
+  display: flex;
+  gap: 40px;
 }
 .header-nav-item {
 }
 .header-nav-link {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  color: #0c0c0c;
 }
+
 .header-social-list {
+  display: flex;
+  gap: 10px;
 }
+
 .header-social-item {
 }
+/* #region contact-us */
+.contact-us {
+}
+
+.container {
+}
+
+.container {
+}
+.story-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  background-color: #0c0c0c;
+  background-image: url(../images/bgrimg.png);
+  width: 1150px;
+  min-height: 298px;
+  padding: 83px 80px;
+}
+.story-text {
+  max-width: 702px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+.story-text-part {
+  color: rgba(251, 251, 251, 0.5);
+}
+.story-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+}
+
+.contact-us-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us-htwo {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 40px;
+}
+
+.contact-us-wrapper {
+  border-radius: 50px;
+  width: 580px;
+  min-height: 556px;
+  background-color: #f3f3f3;
+  padding: 50px 60px;
+}
+
+.modal-parag {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  margin-bottom: 32px;
+}
+
+.modal-form {
+}
+
+.modal-form-label {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.modal-form-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0c0c0c;
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  border-radius: 12px;
+  padding-left: 16px;
+  width: 100%;
+  height: 52px;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.modal-form-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0c0c0c;
+}
+
+.modal-form-textarea {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0c0c0c;
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  height: 90px;
+  background-color: transparent;
+  outline: transparent;
+  resize: none;
+}
+
+.modal-form-textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0c0c0c;
+}
+
+.modal-form-comment {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.contact-send {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+  border-radius: 16px;
+  min-width: 160px;
+  height: 52px;
+  background-color: #3350e9;
+  border: none;
+}
+
+/* #endregion contact-us */
