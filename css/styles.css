@@ -120,19 +120,82 @@ button {
   color: #0c0c0c;
 }
 
-.header-nav-link:hover::after,
-.header-nav-link:focus::after {
+.header-nav-link::after {
   position: absolute;
-  content: "";
+  content: '';
   left: 50%;
   bottom: 30px;
-    width: 8px;
-    height: 8px;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    background-color: #3350e9
-
+  width: 8px;
+  height: 8px;
+  transform: translateX(-50%) scale(0);
+  border-radius: 50%;
+  background-color: #3350e9;
+  opacity: 0;
+  transition: opaciti 250ms ease-in, transform 250ms ease-in;
 }
+
+.header-nav-link:hover::after,
+.header-nav-link:focus::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+/*---------------------- 2 способи роботи з кольором іконки в посиланні  ---------------------*/
+
+/* .header-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(12, 12, 12, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.header-social-link:hover,
+.header-social-link:focus {
+  border: 1px solid rgba(51, 80, 233, 0.1);
+  border-radius: 10px;
+}
+
+.header-social-link:hover > .header-social-icon,
+.header-social-link:focus > .header-social-icon {
+  fill: #3350e9;
+} */
+
+.header-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(12, 12, 12, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  color: #0c0c0c;
+  transition: border-color 250ms ease-in, color 250ms ease-in;
+}
+
+.header-social-link:hover,
+.header-social-link:focus {
+  border-color: 1px solid rgba(51, 80, 233, 0.1);
+  border-radius: 10px;
+  color: #3350e9;
+}
+
+.header-social-icon {
+  fill: currentColor;
+}
+
+.header-social-item {
+  width: 36px;
+  height: 36px;
+}
+
+/*---------------------- 2 способи роботи з кольором іконки в посиланні  ---------------------*/
+
+/* .header-social-icon {
+  fill: #0c0c0c;
+} */
 
 /* .current {
   display: flex;
@@ -156,7 +219,28 @@ button {
   gap: 10px;
 }
 
+/* ==================start section welcom================= */
 
+.main-title {
+  width: 596px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 0.875;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.accent {
+  color: #3350e9;
+}
+
+.post-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+}
 
 .header-social-item {
 }
