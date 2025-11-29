@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 @font-face {
   font-family: 'Gilroy';
   src: url('../css/fonts/Gilroy-Regular.ttf');
@@ -68,20 +72,68 @@ button {
 
 /* .container {
   max-width: 1280px;
-  padding: 0 65px;
+  padding: 0 15px;
   margin: 0 auto;
 } */
 
-.container {
-  max-width: 1180px;
-  padding: 0 15px;
-  margin: 0 auto;
+.section {
+  padding-top: 84px;
+  padding-bottom: 100px;
 }
+
+  .container {
+      max-width: 375px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
 
 /* HEADER  */
 
 .header {
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header-logo { 
+  padding-top: 27.5px;
+  padding-bottom: 27.5px;
+  font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
 }
 
 .header-container {
@@ -90,24 +142,6 @@ button {
   align-items: center;
 }
 
-/* .header .container {
-  display: flex;
-} */
-
-.header-logo {
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: -0.02em;
-  color: #0c0c0c;
-}
-.header-nav {
-}
-.header-nav-list {
-  display: flex;
-  gap: 40px;
-}
-.header-nav-item {
-}
 .header-nav-link {
   position: relative;
   padding-top: 30px;
@@ -140,28 +174,190 @@ button {
   transform: translateX(-50%) scale(1);
 }
 
-/*---------------------- 2 способи роботи з кольором іконки в посиланні  ---------------------*/
 
-/* .header-social-link {
+/* ==================mobile=================== */
+.mobile-menu-nav-link {
+  position: relative;
+  padding-bottom: 10px;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  color: #0c0c0c;
+}
+
+.mobile-menu-nav-link::after {
+  position: absolute;
+    content: '';
+    left: 50%;
+    bottom: 1px;
+    width: 8px;
+    height: 8px;
+    transform: translateX(-50%) scale(0);
+    border-radius: 50%;
+    background-color: #3350e9;
+    opacity: 0;
+    transition: opaciti 250ms ease-in, transform 250ms ease-in;
+}
+
+.mobile-menu-nav-link::after,
+.mobile-menu-nav-link::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+/* ---------start general mobile---------- */
+.header-nav, .header-social-list {
+  display: none;
+}
+
+.burger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(5px);
+  width: 34px;
+  height: 34px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  
+}
+
+.burger-icon {
+  display: block;
+  stroke-width: 2.50px;
+  fill: #0c0c0c;
+}
+
+/* ----------------start-mobile-menu------------------------ */
+
+.mobile-menu {
+position: fixed;
+top: 0;
+right: 0;
+max-width: 200px;
+width: 100%;
+height: 100%;
+
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+
+background: linear-gradient(rgba(12, 12, 12, 0.9), rgba(12, 12, 12, 0.9)),
+    url('../images/menu-bcgimg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+@media (min-resolution: 192dpi) {
+  .mobile-menu {
+    background-image: linear-gradient(rgba(12, 12, 12, 0.9), rgba(12, 12, 12, 0.9)),
+      url('../images/menu-bcgimg@2x.jpg');
+  }
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  
+  
+  
+}
+
+
+.mobile-menu-nav-list {
+  display: flex;
+  flex-direction: column;
+   gap: 24px;
+   align-items: center;
+}
+
+
+.mobile-menu-nav-link {
+  font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    color: #fbfbfb;
+    
+}
+
+
+.mobile-menu-nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-social-list {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+}
+
+.mobile-menu-close { 
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(12, 12, 12, 0.1);
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+    border-radius: 10px;
+    width: 36px;
+    height: 36px;
+  
 }
 
-.header-social-link:hover,
-.header-social-link:focus {
-  border: 1px solid rgba(51, 80, 233, 0.1);
-  border-radius: 10px;
+.menu-social-icon {
+  width: 18px;
+  height: 18px;
+  fill: #fbfbfb;;
 }
+/* ----------------end-mobile-menu------------------------ */
 
-.header-social-link:hover > .header-social-icon,
-.header-social-link:focus > .header-social-icon {
-  fill: #3350e9;
+/* .header-social-list {
+  display: none;
+  gap: 10px;
 } */
+
+/* на пк повернути флекс та зняти нон */
+/* .header-social-list {
+  display: flex;
+  gap: 10px; */
+
+/* ---------end general mobile---------- */
+
+
+
+
+/* .header-logo {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+} */
+
+.header-nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-nav-item {
+}
 
 .header-social-link {
   display: flex;
@@ -191,43 +387,86 @@ button {
   height: 36px;
 }
 
-/*---------------------- 2 способи роботи з кольором іконки в посиланні  ---------------------*/
 
-/* .header-social-icon {
-  fill: #0c0c0c;
-} */
 
-/* .current {
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-
-} */
-
-/* .current::after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #3350e9;
-
-} */
-
-.header-social-list {
-  display: flex;
-  gap: 10px;
+/* ============================tablet */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    /* mobile-menu */
+    .mobile-menu {
+      max-width: 330px;
+    }
+    .menu-social-icon {
+      width: 20px;
+      height: 20px;
+    }
+      /* mobile-menu */
+  
+      .header-logo {
+        padding: 34px 0;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        color: #0c0c0c;
+      }
+  
 }
+
+
+/* ===========================pc */
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+    .header-nav {
+      display: flex;
+        gap: 10px;
+    }
+    .header-logo {
+      padding-top: 32px 0;
+
+    }
+  
+    .header-social-list {
+      display: flex;
+      gap: 10px;
+    }
+}
+
 
 /* ==================start section welcom================= */
 
+.hero {
+  padding-top: 80px;
+}
 .main-title {
-  width: 596px;
+  max-width: 597px;
   font-weight: 600;
   font-size: 72px;
-  line-height: 0.875;
+  line-height: 0.9;
   letter-spacing: -0.02em;
   color: #0c0c0c;
+  margin-bottom: 20px;
 }
 
 .accent {
@@ -235,11 +474,39 @@ button {
 }
 
 .post-title {
+  max-width: 480px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
+}
+
+.home-main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #0c0c0c;
+}
+
+.main-image {
+  margin-top: 40px;
+  repeat: no-repeat;
 }
 
 .header-social-item {
@@ -393,3 +660,52 @@ button {
 }
 
 /* #endregion contact-us */
+/*---------------------- 2 способи роботи з кольором іконки в посиланні  ---------------------*/
+
+/* .header-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(12, 12, 12, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.header-social-link:hover,
+.header-social-link:focus {
+  border: 1px solid rgba(51, 80, 233, 0.1);
+  border-radius: 10px;
+}
+
+.header-social-link:hover > .header-social-icon,
+.header-social-link:focus > .header-social-icon {
+  fill: #3350e9;
+} */
+
+
+menu-social-icon {
+
+}
+/*---------------------- 2 способи роботи з кольором іконки в посиланні  ---------------------*/
+
+/* .header-social-icon {
+  fill: #0c0c0c;
+} */
+
+/* .current {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+} */
+
+/* .current::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3350e9;
+
+} */
