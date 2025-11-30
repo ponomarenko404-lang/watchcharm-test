@@ -195,7 +195,7 @@ button {
   height: 36px;
 }
 
-/* ==================mobile=================== ПОТРІБНО ДОРОБИТИ  */
+/* ==================mobile===================  */
 /* [hover] */
 .menu-social-link {
   display: flex;
@@ -206,7 +206,6 @@ button {
   width: 100%;
   height: 100%;
   color: #fbfbfb;
-  opacity: 0.8;
   transition: border-color 250ms ease-in, color 250ms ease-in;
 }
 
@@ -214,8 +213,8 @@ button {
 .menu-social-link:focus {
   border-color: 1px solid rgba(51, 80, 233, 0.1);
   border-radius: 10px;
-
   color: #fbfbfb;
+  opacity: 0.8;
 }
 .menu-social-icon {
   fill: currentColor;
@@ -354,6 +353,10 @@ button {
   position: absolute;
   top: 20px;
   right: 20px;
+  background-color: transparent;
+  border: none;
+  width: 34px;
+  height: 34px;
 }
 
 .menu-social-link {
@@ -362,17 +365,22 @@ button {
   align-items: center;
   border: 1px solid rgba(251, 251, 251, 0.1);
   border-radius: 10px;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
 }
 .container-link {
   margin-bottom: 40px;
 }
 
-.menu-social-icon {
+/* .menu-social-icon {
   width: 18px;
   height: 18px;
   fill: #fbfbfb;
+} */
+
+.icon-close {
+  stroke-width: 2.5px;
+  stroke: #fbfbfb;
 }
 /* ----------------end-mobile-menu------------------------ */
 
@@ -422,6 +430,16 @@ button {
   }
   .container-link {
     margin-bottom: 50px;
+  }
+
+  .menu-social-item {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-close {
+    width: 20px;
+    height: 20px;
   }
   /* mobile-menu */
 
