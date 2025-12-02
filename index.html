@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- HEADER  -->
-    <header class="header">
+    <header class="header hidden">
       <div class="container header-container">
         <a class="header-logo" href="./index.html">watchcharm</a>
         <nav class="header-nav">
@@ -130,7 +130,7 @@
     </header>
 
     <main>
-      <section class="hero section hidden">
+      <section class="hero section">
         <div class="container main-container">
           <div class="home-main-container">
             <div class="main-left">
@@ -146,7 +146,7 @@
               </p>
             </div>
             <div class="main-right">
-              <img
+              <img class="team-logo"
                 src="./images/hero/teamtripleimg.png"
                 alt="team-logo"
                 width="146"
@@ -155,13 +155,19 @@
               <a class="main-link" href="">Scroll down</a>
             </div>
           </div>
-          <img
-            class="main-image"
-            src="./images/hero/hero-desc.jpg"
-            alt="cool-watch"
-            width="1150"
-            height="500"
-          />
+
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./images/hero/pc-watch.jpg,
+            ./images/hero/pc-watch@x2.jpg 2x"
+            width="1150" height="500" />
+          
+            <source media="(min-width: 768px)" srcset="
+                                ./images/hero/tab-watch.png,
+                                ./images/hero/tab-watch@x2.png 2x
+                              " width="704" height="520" />
+                              <img class="main-image" src="./images/hero/phone-hero.png" alt="watch" width="335" height="366" />
+          </picture>
+          
         </div>
       </section>
       <section class="hidden">
