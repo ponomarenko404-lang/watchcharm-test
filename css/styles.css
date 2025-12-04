@@ -534,7 +534,7 @@ button {
 }
 
 .team-logo {
-  max-width: 108px;
+      min-width: 108px;
 }
 
 .main-link {

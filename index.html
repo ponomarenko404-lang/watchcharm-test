@@ -130,7 +130,7 @@
     </header>
 
     <main>
-      <section class="hero section">
+      <section class="hero section hidden">
         <div class="container main-container">
           <div class="home-main-container">
             <div class="main-left">
@@ -146,12 +146,13 @@
               </p>
             </div>
             <div class="main-right">
-              <img class="team-logo"
-                src="./images/hero/teamtripleimg.png"
-                alt="team-logo"
-                width="146"
-                height="60"
-              />
+              <picture>
+                <source media="(min-width: 1280px)" srcset="./images/hero/teamtripleimg.png,
+            ./images/hero/teamtripleimg@2x.png 2x"/>
+            <source media="(min-width: 768px)" srcset="./images/hero/team-tab.png,
+                        ./images/hero/team-tab@2x.png 2x" />
+                <img class="team-logo" src="./images/hero/teamtripleimg.png" srcset="./images/hero/team-mob@2x.png" alt="team-logo"  />
+              </picture>
               <a class="main-link" href="">Scroll down</a>
             </div>
           </div>
@@ -170,10 +171,8 @@
           
         </div>
       </section>
-      <section class="hidden">
+      <section class="">
         <h2>About Us</h2>
-        <ul>
-          <li>
             <p>
               Welcome to our premium watch collection, where luxury and style
               meet functionality and precision. Our selection of timepieces
@@ -181,14 +180,11 @@
               ensuring that you'll always have a reliable and stylish accessory
               on your wrist.
             </p>
-          </li>
-          <li>
-            At our premium watch collection, we believe that a watch is more
+            <p>At our premium watch collection, we believe that a watch is more
             than just a timekeeping device – it's a statement piece that
             reflects your personality and style. So why settle for anything less
-            than the best?
-          </li>
-        </ul>
+            than the best?</p>
+            
         <button class="catalog" type="button">View catalog</button>
       </section>
 
