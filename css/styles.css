@@ -702,6 +702,11 @@ team-logo {
       background-color: #3350e9;
 }
 
+.btn-link:hover,
+.btn-link:focus {
+  background-color: #1f3cd4;;
+}
+
 .media-container{
   max-width: 335px;
 }
@@ -768,9 +773,15 @@ team-logo {
     .media-container {
       max-width: 530px;
     }
+
+        .about-watch {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
         .container-about {
-          margin-left: 65px;
-          margin-right: 65px;
+          margin: 0 auto;
         }
 }
 
