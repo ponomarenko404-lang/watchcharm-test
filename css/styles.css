@@ -53,6 +53,14 @@ p {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
+  color: #0c0c0c;
+}
 a {
   text-decoration: none;
   color: currentColor;
@@ -77,8 +85,8 @@ button {
 } */
 
 .section {
-  padding-top: 84px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -638,6 +646,140 @@ team-logo {
 
     
 }
+
+/* ==================end section welcom================= */
+
+/* ==================start section about================= */
+
+.content-container {
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  padding: 40px 15px;
+  margin-bottom: 20px;
+  max-width: 335px;
+}
+
+.section-title {
+  margin-bottom: 28px;
+
+  font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+ 
+}
+
+.text {
+  font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
+  }
+
+.first-description {
+  margin-bottom: 20px;
+}
+
+.description-container {
+  margin-bottom: 40px;
+}
+
+.btn-link {
+  display: inline-block;
+  width: 160px;
+    height: 48px;
+    border-radius: 16px;
+    padding: 15px 35px;
+
+    font-weight: 500;
+      font-size: 14px;
+      line-height: 1.28;
+      text-align: center;
+      color: #fbfbfb;
+      cursor: pointer;
+
+      background-color: #3350e9;
+}
+
+.media-container{
+  max-width: 335px;
+}
+.about-watch {
+  border-radius: 30px;
+}
+
+/* =========================================================tablet */
+
+    @media (min-width: 768px) {
+
+      .section-about {
+        padding: 80px 0;
+      }
+      .content-container {
+        max-width: 704px;
+        margin-bottom: 40px;
+        padding: 80px 60px;
+        border-radius: 50px;
+      }
+
+      
+      
+      .section-title {
+        margin-bottom: 40px;
+        font-size: 48px;
+          line-height: 0.9;
+      }
+
+        .text{
+        font-size: 16px;
+          line-height: 1.25
+        }    
+      .description-container {
+        margin-bottom: 60px;
+      }
+
+      .media-container {
+        max-width: 704px;
+      }
+
+            .about-watch {
+              border-radius: 50px;
+            }
+}
+
+/* =========================================================pc */
+
+@media (min-width: 1280px) {
+
+  .container-about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-about {
+    padding: 100px 0;
+  }
+  .content-container {
+    max-width: 580px;
+    margin: 0;
+  }
+
+    .media-container {
+      max-width: 530px;
+    }
+        .container-about {
+          margin-left: 65px;
+          margin-right: 65px;
+        }
+}
+
+
+
+
+
+
+/* ==================end section about================= */
 
 
 .header-social-item {
