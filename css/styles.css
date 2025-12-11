@@ -718,39 +718,38 @@ team-logo {
 
     @media (min-width: 768px) {
 
-      .section-about {
-        padding: 80px 0;
-      }
-      .content-container {
-        max-width: 704px;
-        margin-bottom: 40px;
-        padding: 80px 60px;
-        border-radius: 50px;
-      }
+  .section-about {
+    padding: 80px 0;
+  }
+  .content-container {
+    max-width: 704px;
+    margin-bottom: 40px;
+    padding: 80px 60px;
+    border-radius: 50px;
+  }
 
-      
-      
-      .section-title {
-        margin-bottom: 40px;
-        font-size: 48px;
-          line-height: 0.9;
-      }
+  .section-title {
+    margin-bottom: 40px;
+    font-size: 48px;
+      line-height: 0.9;
+  }
 
-        .text{
-        font-size: 16px;
-          line-height: 1.25
-        }    
-      .description-container {
-        margin-bottom: 60px;
-      }
+  .text{
+  font-size: 16px;
+    line-height: 1.25
+  } 
 
-      .media-container {
-        max-width: 704px;
-      }
+  .description-container {
+    margin-bottom: 60px;
+  }
 
-            .about-watch {
-              border-radius: 50px;
-            }
+  .media-container {
+    max-width: 704px;
+  }
+
+  .about-watch {
+    border-radius: 50px;
+  }
 }
 
 /* =========================================================pc */
@@ -770,19 +769,47 @@ team-logo {
     margin: 0;
   }
 
-    .media-container {
-      max-width: 530px;
-    }
+  .media-container {
+    max-width: 530px;
+  }
 
-        .about-watch {
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
+  .about-watch {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
-        .container-about {
-          margin: 0 auto;
-        }
+  .container-about {
+    margin: 0 auto;
+  }
+}
+
+/* ==================end section about================= */
+
+
+/* ----------------------- start section-catalog------------------------------- */
+
+.catalog-container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 335px;
+}
+
+.catalog-title {
+  margin-bottom: 24px;
+  margin-left: auto;
+}
+
+
+
+.item-container {
+  max-width: 335px;
+  padding: 24px 28px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: #f3f3f3;
+
 }
 
 
@@ -790,8 +817,7 @@ team-logo {
 
 
 
-/* ==================end section about================= */
-
+/* ----------------------- start section-catalog------------------------------- */
 
 .header-social-item {
 }
