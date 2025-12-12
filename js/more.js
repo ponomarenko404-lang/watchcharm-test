@@ -1,3 +1,4 @@
+
 const btn = document.getElementById('show-more-btn');
 const hiddenItems = document.querySelectorAll('.hide-mobile');
 const fourthItem = document.querySelector('.item-container:nth-child(4)');
@@ -17,7 +18,7 @@ btn.addEventListener('click', () => {
   }
 
   // міняємо текст кнопки
-  btn.textContent = isOpened ? 'Hide' : 'Show more';
+  btn.innerHTML = isOpened ? 'Hide' : 'Show more';
 
   // прибираємо фокус після кліку, щоб hover/focus працював
   btn.blur();
