@@ -798,9 +798,27 @@ team-logo {
 .catalog-title {
   margin-bottom: 24px;
   margin-left: auto;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
 }
 
+.catalog-post-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
 
+.catalog-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
+}
 
 .item-container {
   max-width: 335px;
@@ -809,15 +827,61 @@ team-logo {
   margin-bottom: 20px;
   border-radius: 30px;
   background-color: #f3f3f3;
+  list-style: none;
+}
 
+/* 4-й елемент без марджина за замовчуванням */
+.item-container:nth-child(4) {
+  margin-bottom: 0;
+}
+
+/* клас для margin після натискання кнопки */
+.item-container.mb {
+  margin-bottom: 20px;
+}
+
+.catalog__btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fbfbfb;
+  background-color: #3350e9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  height: 48px;
+  border-radius: 16px;
+  margin-top: 40px;
+}
+
+.catalog__btn:hover,
+.catalog__btn:focus {
+  background-color: #1f3cd4;
+}
+
+/* мобільні правила */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .item-container.show {
+    display: block;
+  }
 }
 
 
 
+  
 
 
 
-/* ----------------------- start section-catalog------------------------------- */
+
+
+
+/* -----------------------end section-catalog------------------------------- */
 
 .header-social-item {
 }
