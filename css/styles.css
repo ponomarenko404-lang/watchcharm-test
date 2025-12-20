@@ -938,9 +938,128 @@ team-logo {
 }
 /* -----------------------end section-catalog------------------------------- */
 
-.header-social-item {
+/* -----------------------start section-advertisement------------------------------- */
+
+.story-wrapper {
+background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+url(../images/advertisement/ph-abstr.jpg);
+background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 28px;
+  border-radius: 30px;
+  max-width: 335px;
 }
-/* #region contact-us */
+
+@media (min-resolution: 192dpi) {
+  .story-wrapper {
+    background: linear-gradient(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2),
+      url(../images/advertisement/ph-abstr@2x.jpg);
+      background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+  }
+}
+
+.story-text {
+font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  max-width: 279px;
+  margin-bottom: 28px;
+
+}
+
+.story-accent {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.story_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+  background-color: transparent;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  width: 160px;
+  height: 48px;
+  border-radius: 16px;
+  margin-top: 28px;
+}
+
+/* =================================================tablet============================== */
+
+@media (min-width: 768px) {
+  .story-wrapper {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+        url(../images/advertisement/tab-abstr.jpg);
+        background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          max-width: 704px;
+    padding: 80px 64px;
+   
+  }
+    .story-text {
+      max-width: 576px;
+        font-size: 48px;
+        line-height: 0.9;
+    }
+
+        .story_btn {
+          margin-top: 32px;
+        }
+    
+    @media (min-resolution: 192dpi) {
+      .story-wrapper {
+        background: linear-gradient(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2),
+          url(../images/advertisement/tab-abstr@2x.jpg);
+          background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+      }
+    }
+}
+
+/* ==============================pc================================ */
+
+@media (min-width: 1280px) {
+.story-wrapper {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+      url(../images/advertisement/pc-abstr.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1150px;
+    padding: 83px 80px;
+    margin: 0 auto;
+    display: flex;
+      justify-content: space-between;
+  }
+
+    .story-text {
+      max-width: 690px;
+      margin-bottom: 0;
+    }
+
+    .story_btn {
+      margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+/* -----------------------end section-advertisement------------------------------- */
+/* #region contact-us
 .contact-us {
 }
 
@@ -1086,7 +1205,7 @@ team-logo {
   height: 52px;
   background-color: #3350e9;
   border: none;
-}
+} */
 
 /* #endregion contact-us */
 /*---------------------- 2 способи роботи з кольором іконки в посиланні  ---------------------*/
