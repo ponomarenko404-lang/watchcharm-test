@@ -823,7 +823,7 @@ team-logo {
 .item-container {
   max-width: 335px;
   padding: 24px 28px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-bottom: 20px;
   border-radius: 30px;
   background-color: #f3f3f3;
@@ -872,9 +872,71 @@ team-logo {
   }
 }
 
+/* =================================================tablet============================== */
 
+@media (min-width: 768px) {
 
-  /* -----------------------end section-catalog------------------------------- */
+  .catalog-title {
+      font-size: 48px;
+      line-height: 0.9;
+      margin-bottom: 40px;
+  }
+
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+   column-gap: 16px;
+   row-gap: 32px;
+  }
+
+  .catalog-container {
+    /* display: flex; */
+    padding: 0 32px;
+      margin: 0 auto;
+      max-width: 704px;
+  }
+
+  .catalog-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .item-container {
+    max-width: 344px;
+    margin-bottom: 0;
+    padding: 24px 32px;
+  }
+  .catalog-post-title {
+    font-size: 20px;
+      line-height: 1;
+  }
+
+  .catalog__btn {
+    display: none;
+  }
+}
+
+/* ==================pc========================= */
+
+@media (min-width: 1280px) {
+
+.catalog-container { 
+  max-width: 1150px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 23px;
+  row-gap: 32px;
+}
+  .item-container {
+    max-width: 368px;
+  }
+    .catalog-item {
+      width: calc((100% - 46px) / 3);
+    }
+}
+/* -----------------------end section-catalog------------------------------- */
 
 .header-social-item {
 }
