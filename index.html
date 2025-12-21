@@ -333,7 +333,7 @@
         </div>
       </section>
 
-      <section class="advertisement section">
+      <section class="advertisement section hidden">
         <div class="container">
           <h2 hidden>Advertisement</h2>
           <div class="story-wrapper">
@@ -348,67 +348,92 @@
         </div>
       </section>
 
-      <section class="hidden">
-        <h2>Sale</h2>
-        <ul>
-          <li>
-            <img
-              src="/images/watchsale5.png"
-              alt="watchsale5"
-              width="96"
-              height="100"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/watchsale3.png"
-              alt="watchsale3"
-              width="96"
-              height="100"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/watchsale2.png"
-              alt="watchsale2"
-              width="96"
-              height="100"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/watchsale4.png"
-              alt="watchsale4"
-              width="96"
-              height="100"
-            />
-          </li>
-          <img
-            src="./images/watchsale1.png"
-            alt="watchsale1"
-            width="328"
-            height="398"
-          />
-        </ul>
-        <h3>MARQ&reg; Commander (Gen 2) - Carbon Edition</h3>
-        <p>Product tag: 706587</p>
-        <p>€1500</p>
-        <span>€3000</span>
-        <p>
-          The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch
-          for adventurers that takes materials and features to the next level.
-          The body of the watch is made of very durable Fused Carbon Fiber
-          material and has a precise AMOLED touch screen. The sensitive touch
-          screen is complemented by buttons that can be used in any conditions.
-        </p>
-        <ul>
-          <li>Fused carbon fiber</li>
-          <li>Grade-5 Titanuim</li>
-          <li>Athlete</li>
-          <li>Golfer</li>
-          <li>Commander</li>
-          <li>Adventurer</li>
-        </ul>
+      <section class="sale">
+        <div class="container">
+          <h2 class="sale-title">Sale</h2>
+          <ul class="sale-list">
+            <li class="sale-item">
+              <picture class="img-box">
+                <source media="(max-width: 767px)"
+                  srcset="./images/sale/sase-ph/ph-sale-one.png 1x, ./images/sale/sase-ph/ph-sale-one@2x.png 2x">
+          
+                <source media="(min-width: 768px)"
+                  srcset="./images/sale/sale-tab-pc/tap-pc-sale-one.png 1x, ./images/sale/sale-tab-pc/tap-pc-sale-one@2x.png 2x">
+          
+                <img src="./images/sale/sase-ph/ph-sale-one.png" alt="watch" loading="lazy">
+              </picture>
+            </li>
+            <li class="sale-item">
+              <picture>
+                <source media="(max-width: 767px)"
+                  srcset="./images/sale/sase-ph/ph-sale-two.png. 1x, ./images/sale/sase-ph/ph-sale-two@2x.png 2x">
+          
+                <source media="(min-width: 768px)"
+                  srcset="./images/sale/sale-tab-pc/tap-pc-sale-two.png 1x, ./images/sale/sale-tab-pc/tap-pc-sale-two@2x.png 2x">
+          
+                <img src="./images/sale/sase-ph/ph-sale-two.png" alt="watch" loading="lazy">
+              </picture>
+            </li>
+            <li class="sale-item">
+              <picture>
+                <source media="(max-width: 767px)"
+                  srcset="./images/sale/sase-ph/ph-sale-three.png 1x, ./images/sale/sase-ph/ph-sale-three@2x.png 2x">
+          
+                <source media="(min-width: 768px)"
+                  srcset="./images/sale/sale-tab-pc/tap-pc-sale-three.png 1x, ./images/sale/sale-tab-pc/tap-pc-sale-three@2x.png 2x">
+          
+                <img src="./images/sale/sase-ph/ph-sale-three.png" alt="watch" loading="lazy">
+              </picture>
+          
+            </li>
+            <li class="sale-item">
+              <picture>
+                <source media="(max-width: 767px)"
+                  srcset="./images/sale/sase-ph/ph-sale-four.png 1x, ./images/sale/sase-ph/ph-sale-four@2x.png 2x">
+          
+                <source media="(min-width: 768px)"
+                  srcset="./images/sale/sale-tab-pc/tap-pc-sale-four.png 1x, ./images/sale/sale-tab-pc/tap-pc-sale-four@2x.png 2x">
+          
+                <img src="./images/sale/sase-ph/ph-sale-four.png" alt="watch" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+          <div class="main-watch">
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="./images/sale/sase-ph/ph-sale-main.png 1x, ./images/sale/sase-ph/ph-sale-main@2x.png 2x">
+            
+              <source media="(min-width: 768px)"
+                srcset="./images/sale/sale-tab-pc/tap-pc-sale-main.png 1x, ./images/sale/sale-tab-pc/tap-pc-sale-main@2x.png 2x">
+            
+              <img src="./images/sale/sase-ph/ph-sale-main.png" alt="watch" loading="lazy">
+            </picture>
+          </div>
+         <div class="description-container">
+          <h3 class="sale-descrription">MARQ&reg; Commander (Gen 2) - Carbon Edition</h3>
+          <p class="description-name">Product tag: 706587</p>
+          <div class="price-box">
+            <p class="description-price">€1500</p>
+            <span class="accent-price">€3000</span>
+          </div>
+          <p class="main-description">
+            The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch
+            for adventurers that takes materials and features to the next level.
+            The body of the watch is made of very durable Fused Carbon Fiber
+            material and has a precise AMOLED touch screen. The sensitive touch
+            screen is complemented by buttons that can be used in any conditions.
+          </p>
+          <ul class="description-list">
+            <li class="description-item" a class="sale-link">Fused carbon fiber</li>
+            <li class="description-item" a class="sale-link">Grade-5 Titanuim</li>
+            <li class="description-item" a class="sale-link">Athlete</li>
+            <li class="description-item" a class="sale-link">Golfer</li>
+            <li class="description-item" a class="sale-link">Commander</li>
+            <li class="description-item" a class="sale-link">Adventurer</li>
+          </ul>
+         </div> 
+         
+        </div>
       </section>
 
       <!-- #region contact us-->
