@@ -78,21 +78,17 @@ button {
   cursor: pointer;
 }
 
-/* .container {
-  max-width: 1280px;
-  padding: 0 15px;
-  margin: 0 auto;
-} */
+
 
 .section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 
 .container {
   max-width: 375px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -100,20 +96,16 @@ button {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 65px;
+    padding-right: 65px;
   }
 }
 
@@ -421,13 +413,6 @@ button {
 
 /* ============================tablet */
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   /* mobile-menu */
   .mobile-menu {
     max-width: 330px;
@@ -463,14 +448,6 @@ button {
 /* ===========================pc */
 
 @media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .mobile-menu {
     display: none;
   }
@@ -524,25 +501,16 @@ button {
   color: rgba(12, 12, 12, 0.7);
 }
 
-/* .home-main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
-.main-left {
-  margin-bottom: 28px;
-}
-
 /* на пк повернути фл дір колум  */
 .main-right {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 28px;
 }
 
 .team-logo {
-      min-width: 108px;
+  width: 108px;
 }
 
 .main-link {
@@ -564,13 +532,7 @@ button {
 
 /* ============================tablet */
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+ 
 
     .home-main-container {
       display: flex;
@@ -592,6 +554,7 @@ button {
 
 .main-right {
   flex-direction: column;
+  margin-top: 0;
 }
 
 .main-link {
@@ -602,8 +565,7 @@ font-size: 20px;
 .main-image {
   margin-top: 40px;
   border-radius: 30px;
-  min-width: 335px;
-  min-height: 366px;
+ width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -616,14 +578,6 @@ team-logo {
 /*---------------------------------- pc */
 
 @media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .hero {
       padding-top: 80px;
     }
@@ -638,18 +592,16 @@ team-logo {
     .team-logo {
       max-width: 146px;
     }
-
-        .main-image {
-          max-width: 1150px;
-        }
-
-
     
 }
 
 /* ==================end section welcom================= */
 
 /* ==================start section about================= */
+
+.section-about {
+  padding-bottom: 60px;
+}
 
 .content-container {
   background-color: #f3f3f3;
@@ -670,6 +622,7 @@ team-logo {
 }
 
 .text {
+  width: 295px;
   font-weight: 500;
     font-size: 14px;
     line-height: 1.28571;
@@ -735,8 +688,9 @@ team-logo {
   }
 
   .text{
+  width: 584px;
   font-size: 16px;
-    line-height: 1.25
+  line-height: 1.25
   } 
 
   .description-container {
@@ -760,7 +714,15 @@ team-logo {
     display: flex;
     justify-content: space-between;
   }
+  
+    .about-container {
+      display: flex;
+      justify-content: space-between;
+    }
 
+     .text {
+      width: 460px;
+     }
   .section-about {
     padding: 100px 0;
   }
@@ -789,10 +751,8 @@ team-logo {
 
 /* ----------------------- start section-catalog------------------------------- */
 
-.catalog-container {
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: 335px;
+.section-catalog {
+padding-top: 0;
 }
 
 .catalog-title {
@@ -901,7 +861,7 @@ team-logo {
   }
 
   .item-container {
-    max-width: 344px;
+    min-width: 344px;
     margin-bottom: 0;
     padding: 24px 32px;
   }
@@ -939,7 +899,10 @@ team-logo {
 /* -----------------------end section-catalog------------------------------- */
 
 /* -----------------------start section-advertisement------------------------------- */
+.advertisement {
+  padding-bottom: 60px;
 
+}
 .story-wrapper {
   background:
     linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
@@ -950,7 +913,6 @@ team-logo {
   background-repeat: no-repeat;
   padding: 60px 28px;
     border-radius: 30px;
-    max-width: 335px;
 }
   
 
@@ -1070,7 +1032,7 @@ font-weight: 500;
 
 .sale-list {
   display: flex;
-  justify-content: space-between;
+  
   margin-bottom: 20px;
 
 
