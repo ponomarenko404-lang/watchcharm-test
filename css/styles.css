@@ -1032,7 +1032,7 @@ font-weight: 500;
 
 .sale-list {
   display: flex;
-  
+      gap: 5px;
   margin-bottom: 20px;
 
 
@@ -1250,9 +1250,142 @@ max-width: 132px;
           padding: 60px 60px;
                   /* height: 558px;  */
         }
-  /* need another 1281 row */
 }
 /* -----------------------end section-sale------------------------------- */
+
+/* ============================ reviews ============================ */
+.reviews-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.reviews-viewport {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.reviews-viewport::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+.reviews-list {
+  display: flex;
+  gap: 16px;
+}
+
+.reviews-item {
+  flex: 0 0 100%;
+  /* mobile */
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 32px 36px;
+  background-color: #f3f3f3;
+}
+
+.team-logo-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-img-logo {
+  margin-bottom: 24px;
+}
+
+.reviews-post-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.reviews-description {
+  min-width: 263px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(12, 12, 12, 0.4);
+}
+
+/* ============================ Tablet ============================ */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .reviews-item {
+    flex: 0 0 calc(50% - 8px);
+    /* 2 картки видимі */
+  }
+
+    .reviews-post-title {
+      font-size: 18px;
+        line-height: 1.1;
+    }
+
+    .reviews-description {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+}
+
+/* ============================ Desktop ============================ */
+@media (min-width: 1280px) {
+  .reviews-list {
+    gap: 20px;
+  }
+
+  .reviews-item {
+    flex: 0 0 calc((100% - 40px) / 3);
+
+    .reviews-description {
+      min-width: 298px;
+      line-height: 1.25;
+      font-size: 16px;
+    }
+}
+}
+/* ============================ Dots ============================ */
+.reviews-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.reviews-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(12, 12, 12, 0.2);
+  transition: background-color 0.3s;
+}
+
+.reviews-dots .dot.active {
+  background-color: rgba(12, 12, 12, 0.8);
+}
+
+/* desktop - hide dots */
+@media (min-width: 1280px) {
+  .reviews-dots {
+    display: none;
+  }
+}
+/* -----------------------start section-reviews------------------------------- */
+
+
+
+/* -----------------------end section-reviews------------------------------- */
+
+
 /* #region contact-us
 .contact-us {
 }
