@@ -408,9 +408,6 @@ button {
   gap: 40px;
 }
 
-.header-nav-item {
-}
-
 /* ============================tablet */
 @media (min-width: 768px) {
   /* mobile-menu */
@@ -814,6 +811,7 @@ padding-top: 0;
   height: 48px;
   border-radius: 16px;
   margin-top: 40px;
+  border: none;
 }
 
 .catalog__btn:hover,
@@ -1223,7 +1221,6 @@ max-width: 132px;
 @media (min-width: 1280px) {
 
       .sale {
-         
           padding-bottom: 100px;
       }
 
@@ -1234,7 +1231,7 @@ max-width: 132px;
     /* padding-right: 65px;
     padding-left: 65px; */
   }
-   
+  
 .img-container {
   margin-bottom: 0;
   gap: 20px;
@@ -1254,6 +1251,8 @@ max-width: 132px;
 /* -----------------------end section-sale------------------------------- */
 
 /* ============================ reviews ============================ */
+
+/* -----------------------start section-reviews------------------------------- */
 .reviews-title {
   font-weight: 600;
   font-size: 32px;
@@ -1379,11 +1378,97 @@ max-width: 132px;
     display: none;
   }
 }
-/* -----------------------start section-reviews------------------------------- */
-
-
-
 /* -----------------------end section-reviews------------------------------- */
+
+.contact-title {
+  font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 24px;
+}
+
+.form-box {
+  padding: 48px 28px;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.form-text {
+  font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
+    margin-bottom: 28px;
+}
+
+.contact-form {
+  /* padding: 48px 28px; */
+  margin-bottom: 20px;
+  
+}
+
+.form-label {
+  margin-bottom: 18px;
+}
+
+.input-form {
+  border-radius: 12px;
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  padding-left: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+  width: 100%;
+
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+
+}
+
+.form-textarea {
+  border: 1px solid rgba(12, 12, 12, 0.15);
+    border-radius: 12px;
+    padding: 12px 136px 54px 14px;
+    width: 100%;
+    height: 84px;
+    resize: none;
+}
+
+
+.form-button {
+  display: flex;
+  margin-top: 28px;
+  border-radius: 16px;
+    padding: 12px 50px;
+    background-color: #3350e9;
+    border: none;
+
+    font-weight: 500;
+      font-size: 14px;
+      line-height: 1.29;
+      text-align: center;
+
+      color: #fbfbfb;
+}
+
+
+
+
+/* ============================ Tablet ============================ */
+
+@media (min-width: 768px) {
+
+  .form-box {
+  padding: 50px 122px;
+
+}
+}
+
 
 
 /* #region contact-us
@@ -1558,8 +1643,6 @@ max-width: 132px;
   fill: #3350e9;
 } */
 
-menu-social-icon {
-}
 /*---------------------- 2 способи роботи з кольором іконки в посиланні  ---------------------*/
 
 /* .header-social-icon {

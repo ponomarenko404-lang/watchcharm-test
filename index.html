@@ -361,9 +361,9 @@
                       srcset="./images/sale/sase-ph/ph-sale-one.png 1x, ./images/sale/sase-ph/ph-sale-one@2x.png 2x">
               
                     <source media="(min-width: 768px)"
-                      srcset="./images/sale/sale-tab-pc/tap-pc-sale-one.png 1x, ./images/sale/sale-tab-pc/tap-pc-sale-one@2x.png 2x">
+                      srcset="./images/sale/sale-tab-pc/tap-pc-sale-one.png 1x, ./images/sale/sase-ph/ph-sale-one@2x.png 2x">
               
-                    <img src="./images/sale/sase-ph/ph-sale-one.png" alt="watch" loading="lazy">
+                    <img src="./images/sale/sase-ph/ph-sale-one@2x.png" alt="watch" loading="lazy">
                   </picture>
                 </li>
                 <li class="sale-item">
@@ -479,68 +479,43 @@
   </div>
 </section>
 
-
-
-      <!-- #region contact us-->
-      <section id="contact-us" class="contact-us hidden">
-        <div class="container">
-          <h2 class="contact-us-htwo">Contact Us</h2>
-          <div class="contact-us-main-wrapper">
-            <div class="contact-us-wrapper">
-              <p class="modal-parag">
-                Please use the form below to contact us. Enter your name, email,
-                phone, and message and we'll get back to you shortly.
-              </p>
-              <form class="modal-form" name="modal-form">
-                <label class="modal-form-label" for="user-name">
-                  <input
-                    class="modal-form-input"
-                    type="text"
-                    name="user-name"
-                    id="user-name"
-                    placeholder="Name"
-                  />
-                </label>
-                <label class="modal-form-label" for="e-mail">
-                  <input
-                    class="modal-form-input"
-                    type="email"
-                    name="e-mail"
-                    id="e-mail"
-                    placeholder="Email"
-                  />
-                </label>
-                <label class="modal-form-label" for="phone">
-                  <input
-                    class="modal-form-input"
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    placeholder="+380"
-                  />
-                </label>
-
-                <label class="modal-form-comment" for="user-comment">
-                  <textarea
-                    class="modal-form-textarea"
-                    name="user-comment"
-                    id="user-comment"
-                    placeholder="Comment"
-                  ></textarea>
-                </label>
-
-                <button class="contact-send" type="submit">Send</button>
-              </form>
-            </div>
-            <img
-              src="./images/contact-us/Watch-img.jpg"
-              alt="Image of Watch"
-              width="530"
-              height="556"
-            />
-          </div>
-        </div>
-      </section>
+<section class="section contact-section">
+  <div class="container">
+    <h2 class="contact-title">Contact Us</h2>
+    <div class="form-box">
+      <p class="form-text">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you
+        shortly.</p>
+      <form action="" class="contact-form" name="user-name">
+        <label for="user-name" class="form-label">
+          <input type="text" class="input-form" name="user-name" id="user-name" placeholder="Name">
+        </label>
+        <label for="e-mail" class="form-label">
+          <input type="email" class="input-form" name="e-mail" id="e-mail" placeholder="Email">
+        </label>
+        <label for="phone" class="form-label">
+          <input type="tel" class="input-form" name="phone" id="phone" placeholder="+380">
+          <label for="" class="form-comment">
+            <textarea class="form-textarea" name="user-comment" id="user-comment" placeholder="Comment"></textarea>
+          </label>
+          <button type="submit" class="form-button">Send</button>
+      </form>
+    </div>
+     <div>
+      <picture>
+        <source media="(min-width: 1280px)" srcset="
+          ./images/contact-us/pc-contact-watch.jpg 1x,
+          ./images/contact-us/pc-contact-watch@2x.jpg 2x
+        " />
+        <source media="(min-width: 768px)" srcset="
+          ./images/contact-us/tab-contact-watch.jpg 1x,
+          ./images/contact-us/tab-contact-watch@2x.jpg 2x
+        " />
+        <img class="" src="./images/contact-us/ph-contact-watch.jpg " srcset="./images/contact-us/ph-contact-watch.jpg 1x,
+          ./images/contact-us/ph-contact-watch@2x.jpg 2x" alt="contact-watch" />
+      </picture>
+     </div>
+  </div>
+</section>
     </main>
     <footer></footer>
     <script src="./js/reviews-slider.js"></script> 
