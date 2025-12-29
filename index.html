@@ -355,52 +355,66 @@
           <div class="sale-container">
             <div class="img-container">
               <ul class="sale-list">
+              
                 <li class="sale-item">
-                  <picture class="img-box">
-                    <source media="(max-width: 767px)"
-                      srcset="./images/sale/sase-ph/ph-sale-one.png 1x, ./images/sale/sase-ph/ph-sale-one@2x.png 2x">
-              
-                    <source media="(min-width: 768px)"
-                      srcset="./images/sale/sale-tab-pc/tap-pc-sale-one.png 1x, ./images/sale/sase-ph/ph-sale-one@2x.png 2x">
-              
-                    <img src="./images/sale/sase-ph/ph-sale-one@2x.png" alt="watch" loading="lazy">
+                  <picture class="sale-picture">
+                    <source media="(min-width: 768px)" srcset="
+                        ./images/sale/sale-tab-pc/tap-pc-sale-one.png 1x,
+                        ./images/sale/sale-tab-pc/tap-pc-sale-one.png 2x
+                      " />
+                    <source media="(max-width: 767px)" srcset="
+                        ./images/sale/sase-ph/ph-sale-one.png 1x,
+                        ./images/sale/sase-ph/ph-sale-one@2x.png 2x
+                      " />
+                    <img src="./images/sale/sase-ph/ph-sale-one.png" alt="watch" loading="lazy" />
                   </picture>
                 </li>
+    
                 <li class="sale-item">
-                  <picture>
-                    <source media="(max-width: 767px)"
-                      srcset="./images/sale/sase-ph/ph-sale-two.png 1x, ./images/sale/sase-ph/ph-sale-two@2x.png 2x">
-              
-                    <source media="(min-width: 768px)"
-                      srcset="./images/sale/sale-tab-pc/tap-pc-sale-two.png 1x, ./images/sale/sale-tab-pc/tap-pc-sale-two@2x.png 2x">
-              
-                    <img src="./images/sale/sase-ph/ph-sale-two.png" alt="watch" loading="lazy">
+                  <picture class="sale-picture">
+                    <source media="(min-width: 768px)" srcset="
+                        ./images/sale/sale-tab-pc/tap-pc-sale-two.png 1x,
+                        ./images/sale/sale-tab-pc/tap-pc-sale-two.png 2x
+                      " />
+                    <source media="(max-width: 767px)" srcset="
+                        ./images/sale/sase-ph/ph-sale-two.png 1x,
+                        ./images/sale/sase-ph/ph-sale-two@2x.png 2x
+                      " />
+                    <img src="./images/sale/sase-ph/ph-sale-two.png" alt="watch" loading="lazy" />
                   </picture>
                 </li>
+              
                 <li class="sale-item">
-                  <picture>
-                    <source media="(max-width: 767px)"
-                      srcset="./images/sale/sase-ph/ph-sale-three.png 1x, ./images/sale/sase-ph/ph-sale-three@2x.png 2x">
-              
-                    <source media="(min-width: 768px)"
-                      srcset="./images/sale/sale-tab-pc/tap-pc-sale-three.png 1x, ./images/sale/sale-tab-pc/tap-pc-sale-three@2x.png 2x">
-              
-                    <img src="./images/sale/sase-ph/ph-sale-three.png" alt="watch" loading="lazy">
-                  </picture>
-              
-                </li>
-                <li class="sale-item">
-                  <picture>
-                    <source media="(max-width: 767px)"
-                      srcset="./images/sale/sase-ph/ph-sale-four.png 1x, ./images/sale/sase-ph/ph-sale-four@2x.png 2x">
-              
-                    <source media="(min-width: 768px)"
-                      srcset="./images/sale/sale-tab-pc/tap-pc-sale-four.png 1x, ./images/sale/sale-tab-pc/tap-pc-sale-four@2x.png 2x">
-              
-                    <img src="./images/sale/sase-ph/ph-sale-four.png" alt="watch" loading="lazy">
+                  <picture class="sale-picture">
+                    
+                    <source media="(min-width: 768px)" srcset="
+                        ./images/sale/sale-tab-pc/tap-pc-sale-three.png 1x,
+                        ./images/sale/sale-tab-pc/tap-pc-sale-three.png 2x
+                      " />
+                    <source media="(max-width: 767px)" srcset="
+                        ./images/sale/sase-ph/ph-sale-three.png 1x,
+                        ./images/sale/sase-ph/ph-sale-three@2x.png 2x
+                      " />
+                    <img src="./images/sale/sase-ph/ph-sale-three.png" alt="watch" loading="lazy" />
                   </picture>
                 </li>
+              
+                <li class="sale-item">
+                  <picture class="sale-picture">
+                    <source media="(min-width: 768px)" srcset="
+                        ./images/sale/sale-tab-pc/tap-pc-sale-four.png 1x,
+                        ./images/sale/sale-tab-pc/tap-pc-sale-four.png 2x
+                      " />
+                    <source media="(max-width: 767px)" srcset="
+                        ./images/sale/sase-ph/ph-sale-four.png 1x,
+                        ./images/sale/sase-ph/ph-sale-four@2x.png 2x
+                      " />
+                    <img src="./images/sale/sase-ph/ph-sale-four.png" alt="watch" loading="lazy" />
+                  </picture>
+                </li>
+              
               </ul>
+
               <div class="main-watch">
                 <picture class="main-watch-picture">
                   <source media="(max-width: 767px)"
@@ -482,38 +496,41 @@
 <section class="section contact-section">
   <div class="container">
     <h2 class="contact-title">Contact Us</h2>
-    <div class="form-box">
-      <p class="form-text">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you
-        shortly.</p>
-      <form action="" class="contact-form" name="user-name">
-        <label for="user-name" class="form-label">
-          <input type="text" class="input-form" name="user-name" id="user-name" placeholder="Name">
-        </label>
-        <label for="e-mail" class="form-label">
-          <input type="email" class="input-form" name="e-mail" id="e-mail" placeholder="Email">
-        </label>
-        <label for="phone" class="form-label">
-          <input type="tel" class="input-form" name="phone" id="phone" placeholder="+380">
-          <label for="" class="form-comment">
-            <textarea class="form-textarea" name="user-comment" id="user-comment" placeholder="Comment"></textarea>
+    <div class="contact-container">
+      <div class="form-box">
+        <p class="form-text">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get
+          back to you
+          shortly.</p>
+        <form action="" class="contact-form" name="user-name">
+          <label for="user-name" class="form-label">
+            <input type="text" class="input-form" name="user-name" id="user-name" placeholder="Name">
           </label>
-          <button type="submit" class="form-button">Send</button>
-      </form>
+          <label for="e-mail" class="form-label">
+            <input type="email" class="input-form" name="e-mail" id="e-mail" placeholder="Email">
+          </label>
+          <label for="phone" class="form-label">
+            <input type="tel" class="input-form" name="phone" id="phone" placeholder="+380">
+            <label for="" class="form-comment">
+              <textarea class="form-textarea" name="user-comment" id="user-comment" placeholder="Comment"></textarea>
+            </label>
+            <button type="submit" class="form-button">Send</button>
+        </form>
+      </div>
+      <div>
+        <picture>
+          <source media="(min-width: 1280px)" srcset="
+                ./images/contact-us/pc-contact-watch.jpg 1x,
+                ./images/contact-us/pc-contact-watch@2x.jpg 2x
+              " />
+          <source media="(min-width: 768px)" srcset="
+                ./images/contact-us/tab-contact-watch.jpg 1x,
+                ./images/contact-us/tab-contact-watch@2x.jpg 2x
+              " />
+          <img class="" src="./images/contact-us/ph-contact-watch.jpg " srcset="./images/contact-us/ph-contact-watch.jpg 1x,
+                ./images/contact-us/ph-contact-watch@2x.jpg 2x" alt="contact-watch" />
+        </picture>
+      </div>
     </div>
-     <div>
-      <picture>
-        <source media="(min-width: 1280px)" srcset="
-          ./images/contact-us/pc-contact-watch.jpg 1x,
-          ./images/contact-us/pc-contact-watch@2x.jpg 2x
-        " />
-        <source media="(min-width: 768px)" srcset="
-          ./images/contact-us/tab-contact-watch.jpg 1x,
-          ./images/contact-us/tab-contact-watch@2x.jpg 2x
-        " />
-        <img class="" src="./images/contact-us/ph-contact-watch.jpg " srcset="./images/contact-us/ph-contact-watch.jpg 1x,
-          ./images/contact-us/ph-contact-watch@2x.jpg 2x" alt="contact-watch" />
-      </picture>
-     </div>
   </div>
 </section>
     </main>

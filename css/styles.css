@@ -915,15 +915,7 @@ padding-top: 0;
   
 
 
-/* @media (min-resolution: 192dpi) {
-  .story-wrapper {
-    background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
-      url(../images/advertisement/ph-abstr@2x.jpg);
-      background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-  }
-} */
+
 
 .story-text {
 font-weight: 600;
@@ -1016,6 +1008,15 @@ font-weight: 500;
 
 /* -----------------------start section-sale------------------------------- */
 
+.sale-picture {
+  display: block;
+}
+
+.sale-picture img {
+  width: 52px;
+  height: 54px;
+  object-fit: contain;
+}
 .sale {
   padding-top: 0;
 }
@@ -1137,7 +1138,11 @@ font-weight: 500;
 /*=========================================== tablet */
 
 @media (min-width: 768px) {
- 
+  .sale-picture img {
+      width: 96px;
+      height: 100px;
+      object-fit: contain;
+    }
 .sale {
   padding-top: 0;
 }
@@ -1407,7 +1412,7 @@ max-width: 132px;
 
 .contact-form {
   /* padding: 48px 28px; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   
 }
 
@@ -1430,6 +1435,10 @@ max-width: 132px;
 
 }
 
+/* .input-form:focus {
+  border: 1px solid #3350e9;
+} */
+
 .form-textarea {
   border: 1px solid rgba(12, 12, 12, 0.15);
     border-radius: 12px;
@@ -1437,6 +1446,8 @@ max-width: 132px;
     width: 100%;
     height: 84px;
     resize: none;
+    outline: none;
+    overflow: hidden;
 }
 
 
@@ -1463,10 +1474,57 @@ max-width: 132px;
 
 @media (min-width: 768px) {
 
+  .form-text {
+    font-size: 16px;
+      line-height: 1.25;
+  }
+
   .form-box {
   padding: 50px 122px;
+  border-radius: 50px;
+  margin-bottom: 40px;
 
 }
+
+.form-text {
+  font-size: 16px;
+    line-height: 1.25;
+}
+
+.input-form {
+  font-size: 16px;
+    line-height: 1.25;
+}
+
+.form-textarea {
+  height: 90px;
+}
+
+.form-button {
+  width: 160px;
+  padding: 17px 63px;
+}
+
+}
+
+@media (min-width: 1280px) {
+  .form-box {
+   padding: 50px 60px;
+   width: 580px;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between
+  }
+  .form-box {
+    margin-bottom: 0;
+  }
+  .form-button {
+    margin-top: 32px;
+  }
+
+    
 }
 
 
