@@ -64,7 +64,12 @@
             </a>
           </li>
         </ul>
-        <button class="burger-btn" type="button" data-menu-open>
+        <button
+          class="burger-btn"
+          type="button"
+          aria-label="Open menu"
+          data-menu-open
+        >
           <svg class="burger-icon" width="28" height="13">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -81,22 +86,26 @@
           <nav class="mobile-menu-nav">
             <ul class="mobile-menu-nav-list">
               <li class="mobile-menu-nav-item">
-                <a class="mobile-menu-nav-link current-menu" href="">Home</a>
+                <a class="mobile-menu-nav-link current-menu" href="#home">
+                  Home
+                </a>
               </li>
               <li class="mobile-menu-nav-item">
-                <a class="mobile-menu-nav-link" href="">About Us</a>
+                <a class="mobile-menu-nav-link" href="#about">About Us</a>
               </li>
               <li class="mobile-menu-nav-item">
-                <a class="mobile-menu-nav-link" href="">Catalog</a>
+                <a class="mobile-menu-nav-link" href="#catalog">Catalog</a>
               </li>
               <li class="mobile-menu-nav-item">
-                <a class="mobile-menu-nav-link" href="">Sale</a>
+                <a class="mobile-menu-nav-link" href="#sale">Sale</a>
               </li>
               <li class="mobile-menu-nav-item">
-                <a class="mobile-menu-nav-link" href="">Reviews</a>
+                <a class="mobile-menu-nav-link" href="#reviews">Reviews</a>
               </li>
               <li class="mobile-menu-nav-item">
-                <a class="mobile-menu-nav-link" href="">Contact Us</a>
+                <a class="mobile-menu-nav-link" href="#contact-us">
+                  Contact Us
+                </a>
               </li>
             </ul>
           </nav>
@@ -224,9 +233,12 @@
           </div>
           <div class="media-container">
             <picture>
-              <source media="(min-width: 1280px)" srcset="
-              ./images/about/about-desc-watch.jpg,
-              ./images/about/about-desc-watch@2x.jpg 2x width="530" height="532"
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/about/about-desc-watch.jpg,
+                  ./images/about/about-desc-watch@2x.jpg 2x
+                "
               />
               <source
                 media="(min-width: 768px)"
@@ -240,6 +252,8 @@
                 src="./images/about/about-phone-watch.jpg"
                 srcset="./images/about/about-phone-watch@x2.jpg 2x"
                 alt="watch"
+                width="530"
+                height="532"
               />
             </picture>
           </div>
@@ -728,43 +742,46 @@
                 Please use the form below to contact us. Enter your name, email,
                 phone, and message and we'll get back to you shortly.
               </p>
-              <form action="" class="contact-form" name="user-name">
-                <label for="user-name" class="form-label">
-                  <input
-                    type="text"
-                    class="input-form"
-                    name="user-name"
-                    id="user-name"
-                    placeholder="Name"
-                  />
-                </label>
-                <label for="e-mail" class="form-label">
-                  <input
-                    type="email"
-                    class="input-form"
-                    name="e-mail"
-                    id="e-mail"
-                    placeholder="Email"
-                  />
-                </label>
-                <label for="phone" class="form-label">
-                  <input
-                    type="tel"
-                    class="input-form"
-                    name="phone"
-                    id="phone"
-                    placeholder="+380"
-                  />
-                </label>
+              <form action="#" class="contact-form" name="contact-form">
+                <label for="user-name" class="visually-hidden">Name</label>
+                <input
+                  type="text"
+                  class="input-form"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Name"
+                  required
+                />
 
-                <label for="user-comment" class="form-comment">
-                  <textarea
-                    class="form-textarea"
-                    name="user-comment"
-                    id="user-comment"
-                    placeholder="Comment"
-                  ></textarea>
+                <label for="user-email" class="visually-hidden">Email</label>
+                <input
+                  type="email"
+                  class="input-form"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Email"
+                  required
+                />
+
+                <label for="user-phone" class="visually-hidden">Phone</label>
+                <input
+                  type="tel"
+                  class="input-form"
+                  name="user-phone"
+                  id="user-phone"
+                  placeholder="+380"
+                />
+
+                <label for="user-comment" class="visually-hidden">
+                  Comment
                 </label>
+                <textarea
+                  class="form-textarea"
+                  name="user-comment"
+                  id="user-comment"
+                  placeholder="Comment"
+                  required
+                ></textarea>
 
                 <button type="submit" class="form-button">Send</button>
               </form>
@@ -846,7 +863,7 @@
               </ul>
             </div>
             <div class="footer-call-box">
-              <a href="tel:+380 (68) 443-94-26" class="footer-call-btn">
+              <a href="tel:+380684439426" class="footer-call-btn">
                 +380 (68) 443-94-26
               </a>
             </div>
@@ -861,7 +878,7 @@
             <nav class="footer-nav">
               <ul class="footer-nav-list">
                 <li class="footer-nav-item">
-                  <a class="footer-nav-link" href=".#home">Home</a>
+                  <a class="footer-nav-link" href="#home">Home</a>
                 </li>
                 <li class="footer-nav-item">
                   <a class="footer-nav-link" href="#about">About Us</a>
@@ -911,9 +928,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/reviews-slider.js">
-      watchcharm
-    </script>
+    <script src="./js/reviews-slider.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/more.js"></script>
   </body>

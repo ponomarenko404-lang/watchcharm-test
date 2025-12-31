@@ -36,6 +36,17 @@ body {
   font-family: 'Gilroy', sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
 ul,
 ol {
   margin: 0;
@@ -69,6 +80,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  /* width: 100%; */
   height: auto;
   object-fit: cover;
 }
@@ -645,6 +657,7 @@ header {
 }
 .about-watch {
   border-radius: 30px;
+  width: 100%;
 }
 
 /* =========================================================tablet */
@@ -1795,13 +1808,11 @@ header {
     gap: 40px;
   }
 
-  
   .footer-adres-box {
     margin-left: auto;
-}
+  }
 
-nav.footer-nav {
+  nav.footer-nav {
     width: 505px;
-}
-
+  }
 }
